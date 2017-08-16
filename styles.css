@@ -1,7 +1,5 @@
-body {
-    background-color: white;
-}
-
-.annouce {
-    text-align: center;
+.announcement {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  height: 3.75em;
 }
