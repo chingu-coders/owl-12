@@ -1,1 +1,97 @@
+html {
+    -webkit-tap-highlight-color: transparent;
+}
 
+body {
+    background-color: white;
+    color: #4c5155;
+    font-family: Merriweather Sans, sans-serif;
+    font-size: 16px;
+    overflow-x: hidden;
+}
+
+* {
+    transform-origin: 0px 0px 0px;
+}
+
+div {
+    display: block;
+}
+
+li {
+    text-align: match-parent;
+    display: list-item;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: 500;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.divider {
+    color: white;
+}
+
+.annouce {
+    text-align: center;
+}
+
+.how-it-work {
+    background-color: #f0f3f5;
+    min-height: 7.5em;
+    padding: 5em 0;
+    margin: 7.5em 0;
+    position: relative;
+}
+
+.how-it-work .how-it-work-content {
+    padding: 2.5em 0;
+}
+
+.how-it-work-content h2 {
+    text-align: center;
+    margin: 0 0 .9375em;
+}
+
+.how-it-work-content ul {
+    margin: 0 auto;
+    list-style: none;
+    max-width: 30.8333em;
+    display: table;
+}
+
+.how-it-work-content li {
+    margin: 0 auto;
+    font-size: 1.125em;
+    color: #8d9499;
+}
+
+.how-it-work-content li:not(:last-child) {
+    margin-bottom: .9375em;
+}
+
+.how-it-work-content li img {
+    width: 2.125em;
+    margin-right: 1em;
+}
+
+.how-it-work .divider {
+    overflow: visible;
+    position: absolute;
+}
+
+.how-it-work .divider:first-child {
+    top: 0;
+}
+
+.how-it-work .divider:last-child {
+    bottom: 0;
+}
+
+.how-it-work .divider polygon {
+    fill: #fff;
+}
