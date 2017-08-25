@@ -14,6 +14,12 @@ body {
     transform-origin: 0px 0px 0px;
 }
 
+*,
+ :after,
+ :before {
+    box-sizing: border-box;
+}
+
 div {
     display: block;
 }
@@ -94,4 +100,69 @@ img {
 
 .how-it-work .divider polygon {
     fill: #fff;
+}
+
+.owl-carousel {
+    display: none;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.owl-carousel.owl-loaded {
+    display: block;
+}
+
+.owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+}
+
+.owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+}
+
+.owl-carousel.owl-drag .owl-item {
+    user-select: none;
+}
+
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+    display: none;
+}
+
+.owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
+    cursor: pointer;
+    user-select: none;
+}
+
+.owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.owl-carousel .owl-item img {
+    display: block;
+    width: 100%;
+    transform-style: preserve 3d;
+}
+
+.home-clients .logo-flat {
+    margin-top: 15px;
+    height: 36px;
+}
+
+.home-clients img {
+    display: table;
+    margin: 0 auto;
+    width: auto! important;
 }
